@@ -51,10 +51,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id=item.getItemId();
         switch (id){
-            //case R.id.quiz:
-            //  Intent intent=new Intent(MainActivity.this,QuizActivity.class);
-            //startActivity(intent);
-            //break;
+            case R.id.quiz:
+              Intent intent=new Intent(MainActivity.this,quiz_home.class);
+            startActivity(intent);
+            break;
             case R.id.calculator:
                 Intent intent1=new Intent(MainActivity.this,calculator_activity.class);
                 startActivity(intent1);
